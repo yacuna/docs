@@ -1,0 +1,1 @@
+apidoc -i /home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/ -t template.docs.yacuna
