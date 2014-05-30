@@ -85,46 +85,18 @@ define({ api: [
       }
     },
     "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "String",
-            "field": "firstname",
-            "optional": false,
-            "description": "Firstname of the User"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "field": "lastname",
-            "optional": false,
-            "description": "Lastname of the User"
-          }
-        ]
-      },
       "examples": [
         {
-          "title": "Success-Response:",
-          "content": "   HTTP/1.1 200 OK\n   {\n     \"firstname\": \"John\",\n     \"lastname\": \"Doe\"\n   }\n"
+          "title": "Success-Response Example:",
+          "content": "HTTP/1.1 200 OK\n{\n\t\"tradeOrder\": {\n\t\t\"id\": \"AAEAAks1SVZ5LFDgIZr78JiwvgeLKY5bjbE-3K13LddaT1rE0Dwev4pI\",\n\t\t\"creationDateTime\": \"2014-05-30T08:25:24Z\",\n\t\t\"amount\": {\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 400\n\t\t},\n\t\t\"customType\": null,\n\t\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\t\"walletAccountId\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\t\"walletAccountItemId\": null,\n\t\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\t\"tradeOrderType\": \"BuyMarket\",\n\t\t\"tradeOrderStatus\": \"Created\",\n\t\t\"tradeOrderMarketStatus\": null,\n\t\t\"priceLimit\": null,\n\t\t\"buyAmount\": {\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 1\n\t\t},\n\t\t\"fillRatio\": 0,\n\t\t\"totalAmountSold\": {\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 0\n\t\t},\n\t\t\"totalAmountBought\": {\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 0\n\t\t},\n\t\t\"externalReferenceId\": null\n\t},\n\t\"requestId\": \"JTsUBAAAAUZMO8gILSugK96cEI4\",\n\t\"status\": \"Success\"\n}\n"
         }
       ]
     },
     "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "field": "UserNotFound",
-            "optional": false,
-            "description": "The id of the User was not found."
-          }
-        ]
-      },
       "examples": [
         {
-          "title": "Error-Response:",
-          "content": "   HTTP/1.1 404 Not Found\n   {\n     \"error\": \"UserNotFound\"\n   }\n"
+          "title": "Error-Response Example:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n\t\"errorDetails\": [\n\t\t{\n\t\t\t\"fullName\": \"com.trimplement.wallet.server.common.dom.WalletException\",\n\t\t\t\"simpleName\": \"WalletException\",\n\t\t\t\"description\": \"[AuthenticationError] Api-Token required\",\n\t\t\t\"errorName\": \"AuthenticationError\",\n\t\t\t\"errorNumber\": 4000000,\n\t\t\t\"errorMessageShort\": null,\n\t\t\t\"errorMessageLong\": null,\n\t\t\t\"fieldName\": null,\n\t\t\t\"limitsViolated\": null\n\t\t}\n\t],\n\t\"requestId\": \"JTsUBAAAAUZML_4ZLSugK96cELw\",\n\t\"status\": \"Error\"\n}\n"
         }
       ]
     },
