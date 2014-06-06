@@ -119,6 +119,17 @@ require([
 	 * Create Navigationlist.
 	 */
 	var nav = [];
+	// Mainmenu "General" Entry.
+	if(apiProject.apidoc)
+	{
+		nav.push({
+			group: "_",
+			isHeader: true,
+			title: locale.__("General"),
+			isFixed: true
+		});
+	}
+
 	apiGroups.forEach(function(group) {
 		// Mainmenu-Entry.
 		nav.push({
@@ -158,16 +169,6 @@ require([
 		}); // forEach
 	}); // forEach
 
-	// Mainmenu "General" Entry.
-	if(apiProject.apidoc)
-	{
-		nav.push({
-			group: "_",
-			isHeader: true,
-			title: locale.__("General"),
-			isFixed: true
-		});
-	}
 
 	/**
 	 * Render Pagetitle.
