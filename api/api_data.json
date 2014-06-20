@@ -147,7 +147,7 @@
       "examples": [
         {
           "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n<<<<<<< .mine\n{\n\"requestId\": \"JTsUBAAAAUavl12RLSugK96cEZM\",\n\"status\": \"Success\",\n\"tradeDeal\": \n{\n\t\"id\": \"AAEABGOj1rR4C7xxreNhYNjXItSH_Yp93aYNuhH2GuaNiE4UjkoRolFm\",\n\t\"creationDateTime\": \"2014-05-30T13:11:56Z\",\n\t\"walletAccountIdSold\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\"customType\": null,\n\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\"walletAccountId\": \"AAEAAAP2wHer5G2K21wABSU-sITEYlyw95pStLQLoT9TxrCHcJ9pPNo_\",\n\t\"walletAccountItemId\": \"AAEAAAfCjEaHZli8L8akzpjTofA3udRJj_HdnCDYdBrV9H2S8tauyh6k\",\n\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\"orderId\": \"AAEAAks1SVZ5LFDgIZr78JiwvgeLKY5bjbE-3K13LddaT1rE0Dwev4pI\",\n\t\"otherTradeDealId\": \"AAEABGOj1rR4DJ2m2xrBDZqcIP94U6L_9rlC0amG9W2sdCvVy_N-ydr4\",\n\t\"tradeDealType\": \"Buy\",\n\t\"tradeDealSubtype\": \"MarketTaker\",\n\t\"tradeDealStatus\": \"Completed\",\n\t\"amount\": \n\t{\n\t\t\"currency\": \"XBT\",\n\t\t\"amount\": 0.19622549\n\t},\n\t\"amountSold\": \n\t{\n\t\t\"currency\": \"EUR\",\n\t\t\"amount\": 20.53303527\n\t},\n\t\"price\": \n\t{\n\t\t\"currency\": \"EUR\",\n\t\t\"amount\": 104.64\n\t},\n\t\"feeAmount\": \n\t{\n\t\t\"currency\": \"XBT\",\n\t\t\"amount\": 0.00019623\n\t},\n\t\"marketDealOwner\": \n\t{\n\t\t\"type\": \"MarketV1Deal\",\n\t\t\"id\": \"AAEAH3wOLq02MeYmW7OqZBQ4Vi-g1a16ZjWyJzJo4I2h2BIiy9E8oxNj\"\n\t}\n}\n}\n"
+          "content": "HTTP/1.1 200 OK\n{\n\"requestId\": \"JTsUBAAAAUavl12RLSugK96cEZM\",\n\"status\": \"Success\",\n\"tradeDeal\": \n{\n\t\"id\": \"AAEABGOj1rR4C7xxreNhYNjXItSH_Yp93aYNuhH2GuaNiE4UjkoRolFm\",\n\t\"creationDateTime\": \"2014-05-30T13:11:56Z\",\n\t\"walletAccountIdSold\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\"customType\": null,\n\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\"walletAccountId\": \"AAEAAAP2wHer5G2K21wABSU-sITEYlyw95pStLQLoT9TxrCHcJ9pPNo_\",\n\t\"walletAccountItemId\": \"AAEAAAfCjEaHZli8L8akzpjTofA3udRJj_HdnCDYdBrV9H2S8tauyh6k\",\n\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\"orderId\": \"AAEAAks1SVZ5LFDgIZr78JiwvgeLKY5bjbE-3K13LddaT1rE0Dwev4pI\",\n\t\"otherTradeDealId\": \"AAEABGOj1rR4DJ2m2xrBDZqcIP94U6L_9rlC0amG9W2sdCvVy_N-ydr4\",\n\t\"tradeDealType\": \"Buy\",\n\t\"tradeDealSubtype\": \"MarketTaker\",\n\t\"tradeDealStatus\": \"Completed\",\n\t\"amount\": \n\t{\n\t\t\"currency\": \"XBT\",\n\t\t\"amount\": 0.19622549\n\t},\n\t\"amountSold\": \n\t{\n\t\t\"currency\": \"EUR\",\n\t\t\"amount\": 20.53303527\n\t},\n\t\"price\": \n\t{\n\t\t\"currency\": \"EUR\",\n\t\t\"amount\": 104.64\n\t},\n\t\"feeAmount\": \n\t{\n\t\t\"currency\": \"XBT\",\n\t\t\"amount\": 0.00019623\n\t},\n\t\"marketDealOwner\": \n\t{\n\t\t\"type\": \"MarketV1Deal\",\n\t\t\"id\": \"AAEAH3wOLq02MeYmW7OqZBQ4Vi-g1a16ZjWyJzJo4I2h2BIiy9E8oxNj\"\n\t}\n}\n}\n"
         }
       ]
     },
@@ -1033,8 +1033,8 @@
             "group": "Parameter",
             "type": "String",
             "field": "walletAccountCurrency",
-            "optional": false,
-            "description": "(optional) limit responce to given currencies"
+            "optional": true,
+            "description": "limit responce to given currencies"
           }
         ]
       }
