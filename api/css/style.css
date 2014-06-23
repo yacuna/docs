@@ -9,7 +9,7 @@ body {
 body, p, a, div, th, td { 
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 a {
@@ -40,7 +40,7 @@ p {
 h1 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-  	font-size: 44px;
+  	font-size: 38px;
   	line-height: 50px;
   	margin: 0 0 10px 0;
   	padding: 0;
@@ -49,7 +49,7 @@ h1 {
 h2 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-  	font-size: 24px;
+  	font-size: 20px;
   	line-height: 40px;
   	margin: 0 0 20px 0;
   	padding: 0;
@@ -63,7 +63,7 @@ section {
 section h1 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-  	font-size: 32px;
+  	font-size: 28px;
 	line-height: 40px;
 	padding-bottom: 14px;
 	margin: 0 0 20px 0;
@@ -77,14 +77,14 @@ article {
 article h1 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-  	font-size: 24px;
+  	font-size: 20px;
   	line-height: 26px;
 }
 
 article h2 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-  	font-size: 18px;
+  	font-size: 16px;
   	line-height: 24px;
   	margin: 0 0 10px 0;
 }
@@ -132,7 +132,7 @@ td {
 #apidoc h1 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-  	font-size: 32px;
+  	font-size: 28px;
 	line-height: 40px;
 	padding-bottom: 14px;
 	margin: 0 0 20px 0;
@@ -142,7 +142,7 @@ td {
 #apidoc h2 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-  	font-size: 22px;
+  	font-size: 20px;
   	line-height: 26px;
   	padding-top: 14px;
 }
@@ -268,7 +268,7 @@ pre .pun {
   width: 190px;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 14px;
 	background-color: #ffffff;
 }
 

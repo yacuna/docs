@@ -88,46 +88,6 @@ define({ api: [
     "name": "Deal_get",
     "group": "Deal",
     "version": "1.0.0",
-    "description": "Retrieves the number of Deals with the given properties, provided the currently authenticated user has access to it.",
-    "permission": "authenticated API user",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "field": "dealId",
-            "optional": false,
-            "description": "Deal Id"
-          }
-        ]
-      }
-    },
-    "success": {
-      "examples": [
-        {
-          "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n\t\"count\": 2,\n\t\"requestId\": \"JTsUBAAAAUZrtnaOLSugK96cEBI\",\n\t\"status\": \"Success\"\n}\n"
-        }
-      ]
-    },
-    "error": {
-      "examples": [
-        {
-          "title": "Error-Response Example:",
-          "content": "HTTP/1.1 400 Bad Request\n{\n\t\"requestId\": \"JTsUBAAAAUZML_4ZLSugK96cELw\",\n\t\"status\": \"Error\",\n\t\"errorDetails\":\n\t[\n\t\t{\n\t\t\t\"simpleName\": \"WalletException\",\n\t\t\t\"description\": \"[AuthenticationError] Api-Token required\",\n\t\t\t\"errorName\": \"AuthenticationError\",\n\t\t\t\"errorNumber\": 4000000,\n\t\t\t\"errorMessageShort\": null,\n\t\t\t\"errorMessageLong\": null,\n\t\t\t\"fieldName\": null,\n\t\t\t\"limitsViolated\": null\n\t\t}\n\t]\n}\n"
-        }
-      ]
-    },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/TradeApiController.java"
-  },
-  {
-    "type": "get",
-    "url": "/api/1/deal/get/{dealId}",
-    "title": "Deal get",
-    "name": "Deal_get",
-    "group": "Deal",
-    "version": "1.0.0",
     "description": "Retrieves an existing Deal with the given ID, provided the currently authenticated user has access to it.",
     "permission": "authenticated API user",
     "parameter": {
@@ -147,7 +107,7 @@ define({ api: [
       "examples": [
         {
           "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n\"requestId\": \"JTsUBAAAAUavl12RLSugK96cEZM\",\n\"status\": \"Success\",\n\"tradeDeal\": \n{\n\t\"id\": \"AAEABGOj1rR4C7xxreNhYNjXItSH_Yp93aYNuhH2GuaNiE4UjkoRolFm\",\n\t\"creationDateTime\": \"2014-05-30T13:11:56Z\",\n\t\"walletAccountIdSold\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\"customType\": null,\n\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\"walletAccountId\": \"AAEAAAP2wHer5G2K21wABSU-sITEYlyw95pStLQLoT9TxrCHcJ9pPNo_\",\n\t\"walletAccountItemId\": \"AAEAAAfCjEaHZli8L8akzpjTofA3udRJj_HdnCDYdBrV9H2S8tauyh6k\",\n\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\"orderId\": \"AAEAAks1SVZ5LFDgIZr78JiwvgeLKY5bjbE-3K13LddaT1rE0Dwev4pI\",\n\t\"otherTradeDealId\": \"AAEABGOj1rR4DJ2m2xrBDZqcIP94U6L_9rlC0amG9W2sdCvVy_N-ydr4\",\n\t\"tradeDealType\": \"Buy\",\n\t\"tradeDealSubtype\": \"MarketTaker\",\n\t\"tradeDealStatus\": \"Completed\",\n\t\"amount\": \n\t{\n\t\t\"currency\": \"XBT\",\n\t\t\"amount\": 0.19622549\n\t},\n\t\"amountSold\": \n\t{\n\t\t\"currency\": \"EUR\",\n\t\t\"amount\": 20.53303527\n\t},\n\t\"price\": \n\t{\n\t\t\"currency\": \"EUR\",\n\t\t\"amount\": 104.64\n\t},\n\t\"feeAmount\": \n\t{\n\t\t\"currency\": \"XBT\",\n\t\t\"amount\": 0.00019623\n\t},\n\t\"marketDealOwner\": \n\t{\n\t\t\"type\": \"MarketV1Deal\",\n\t\t\"id\": \"AAEAH3wOLq02MeYmW7OqZBQ4Vi-g1a16ZjWyJzJo4I2h2BIiy9E8oxNj\"\n\t}\n}\n}\n"
+          "content": "HTTP/1.1 200 OK\n{\n\"requestId\": \"JTsUBAAAAUavl12RLSugK96cEZM\",\n\"status\": \"Success\",\n\"tradeDeal\":\n{\n\t\"id\": \"AAEABGOj1rR4C7xxreNhYNjXItSH_Yp93aYNuhH2GuaNiE4UjkoRolFm\",\n\t\"creationDateTime\": \"2014-05-30T13:11:56Z\",\n\t\"walletAccountIdSold\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\"customType\": null,\n\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\"walletAccountId\": \"AAEAAAP2wHer5G2K21wABSU-sITEYlyw95pStLQLoT9TxrCHcJ9pPNo_\",\n\t\"walletAccountItemId\": \"AAEAAAfCjEaHZli8L8akzpjTofA3udRJj_HdnCDYdBrV9H2S8tauyh6k\",\n\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\"orderId\": \"AAEAAks1SVZ5LFDgIZr78JiwvgeLKY5bjbE-3K13LddaT1rE0Dwev4pI\",\n\t\"otherTradeDealId\": \"AAEABGOj1rR4DJ2m2xrBDZqcIP94U6L_9rlC0amG9W2sdCvVy_N-ydr4\",\n\t\"tradeDealType\": \"Buy\",\n\t\"tradeDealSubtype\": \"MarketTaker\",\n\t\"tradeDealStatus\": \"Completed\",\n\t\"amount\":\n\t{\n\t\t\"currency\": \"XBT\",\n\t\t\"amount\": 0.19622549\n\t},\n\t\"amountSold\":\n\t{\n\t\t\"currency\": \"EUR\",\n\t\t\"amount\": 20.53303527\n\t},\n\t\"price\":\n\t{\n\t\t\"currency\": \"EUR\",\n\t\t\"amount\": 104.64\n\t},\n\t\"feeAmount\":\n\t{\n\t\t\"currency\": \"XBT\",\n\t\t\"amount\": 0.00019623\n\t},\n\t\"marketDealOwner\":\n\t{\n\t\t\"type\": \"MarketV1Deal\",\n\t\t\"id\": \"AAEAH3wOLq02MeYmW7OqZBQ4Vi-g1a16ZjWyJzJo4I2h2BIiy9E8oxNj\"\n\t}\n}\n}\n"
         }
       ]
     },
@@ -921,11 +881,11 @@ define({ api: [
     "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
-    "success": {
+    "error": {
       "examples": [
         {
-          "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n\t\"requestId\": \"JTsUBAAAAUZMO8gILSugK96cEI4\",\n\t\"status\": \"Success\",\n\t\"tradeOrder\":\n\t{\n\t\t\"id\": \"AAEAAks1SVZ5LFDgIZr78JiwvgeLKY5bjbE-3K13LddaT1rE0Dwev4pI\",\n\t\t\"externalReferenceId\": null\n\t\t\"creationDateTime\": \"2014-05-30T08:25:24Z\",\n\t\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\t\"walletAccountId\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\t\"tradeOrderType\": \"BuyMarket\",\n\t\t\"tradeOrderStatus\": \"Created\",\n\t\t\"tradeOrderMarketStatus\": null,\n\t\t\"priceLimit\": null,\n\t\t\"fillRatio\": 0,\n\t\t\"amount\":\n\t\t{\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 400\n\t\t},\n\t\t\"buyAmount\":\n\t\t{\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 1\n\t\t},\n\t\t\"totalAmountSold\":\n\t\t{\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 0\n\t\t},\n\t\t\"totalAmountBought\":\n\t\t{\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 0\n\t\t}\n\t}\n}\n"
+          "title": "Error-Response Example:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n\t\"requestId\": \"JTsUBAAAAUZML_4ZLSugK96cELw\",\n\t\"status\": \"Error\",\n\t\"errorDetails\":\n\t[\n\t\t{\n\t\t\t\"simpleName\": \"WalletException\",\n\t\t\t\"description\": \"[AuthenticationError] Api-Token required\",\n\t\t\t\"errorName\": \"AuthenticationError\",\n\t\t\t\"errorNumber\": 4000000,\n\t\t\t\"errorMessageShort\": null,\n\t\t\t\"errorMessageLong\": null,\n\t\t\t\"fieldName\": null,\n\t\t\t\"limitsViolated\": null\n\t\t}\n\t]\n}\n"
         }
       ]
     },
@@ -940,22 +900,7 @@ define({ api: [
       "examples": [
         {
           "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n  \"requestId\": \"sAlIlQAAAUazlxXALSugK96cEL0\",\n  \"status\": \"Success\",\n  \"orderBook\": {\n    \"market\": {\n      \"id\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n      \"currencyCode1\": \"EUR\",\n      \"currencyCode2\": \"XBT\",\n      \"description\": \"Public EUR/BTC market\",\n      \"marketStatistics\": {\n        \"timestamp\": \"2014-06-17T07:06:24Z\",\n        \"buyItemCount\": 2,\n        \"sellItemCount\": 101,\n        \"buyItemAmount\": {\n          \"currency\": \"EUR\",\n          \"amount\": 24.92\n        },\n        \"sellItemAmount\": {\n          \"currency\": \"XBT\",\n          \"amount\": 32.93380179\n        },\n        \"buyPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 99.95\n        },\n        \"sellPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 100\n        },\n        \"lastPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 103.995\n        }\n      },\n      \"priceGranularity\": {\n        \"currency\": \"EUR\",\n        \"amount\": 1e-8\n      }\n    },\n    \"asks\": [\n      [100, 150, 1.5],\n      [100.65, 9.62345449, 0.09561306]\n    ],\n    \"bids\": [\n      [99.95, 9.995, 0.1],\n      [99.5, 14.925, 0.15]\n    ]\n  }\n}\n"
-        }
-      ]
-    },
-    "group": "PublicTradeApiController.java",
-    "type": "",
-    "url": "",
-    "version": "0.0.0",
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
-  },
-  {
-    "success": {
-      "examples": [
-        {
-          "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n  \"count\": 5,\n  \"requestId\": \"sAlIlQAAAUazi16dLSugK96cEKA\",\n  \"status\": \"Success\"\n}\n"
+          "content": "HTTP/1.1 200 OK\n{\n \"marketDepth\": {\n    \"market\": {\n      \"id\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n      \"currencyCode1\": \"EUR\",\n      \"currencyCode2\": \"XBT\",\n      \"description\": \"Public EUR/BTC market\",\n      \"marketStatistics\": {\n        \"timestamp\": \"2014-06-17T07:06:24Z\",\n        \"buyItemCount\": 2,\n        \"sellItemCount\": 101,\n        \"buyItemAmount\": {\n          \"currency\": \"EUR\",\n          \"amount\": 24.92\n        },\n        \"sellItemAmount\": {\n          \"currency\": \"XBT\",\n          \"amount\": 32.93380179\n        },\n        \"buyPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 99.95\n        },\n        \"sellPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 100\n        },\n        \"lastPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 103.995\n        }\n      },\n      \"priceGranularity\": {\n        \"currency\": \"EUR\",\n        \"amount\": 1e-8\n      }\n    },\n  \"asks\": [\n     [100, 150, 1.5],\n     [100.0389496, 159.62345449, 1.59561306],\n   ],\n   \"bids\": [\n     [99.95, 9.995, 0.1],\n     [99.68, 24.92, 0.25]\n   ]\n },\n \"requestId\": \"sAlIlQAAAUaznM4BLSugK96cELw\",\n \"status\": \"Success\"\n}\n"
         }
       ]
     },
@@ -985,7 +930,7 @@ define({ api: [
       "examples": [
         {
           "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n \"marketDepth\": {\n    \"market\": {\n      \"id\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n      \"currencyCode1\": \"EUR\",\n      \"currencyCode2\": \"XBT\",\n      \"description\": \"Public EUR/BTC market\",\n      \"marketStatistics\": {\n        \"timestamp\": \"2014-06-17T07:06:24Z\",\n        \"buyItemCount\": 2,\n        \"sellItemCount\": 101,\n        \"buyItemAmount\": {\n          \"currency\": \"EUR\",\n          \"amount\": 24.92\n        },\n        \"sellItemAmount\": {\n          \"currency\": \"XBT\",\n          \"amount\": 32.93380179\n        },\n        \"buyPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 99.95\n        },\n        \"sellPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 100\n        },\n        \"lastPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 103.995\n        }\n      },\n      \"priceGranularity\": {\n        \"currency\": \"EUR\",\n        \"amount\": 1e-8\n      }\n    },\n  \"asks\": [\n     [100, 150, 1.5],\n     [100.0389496, 159.62345449, 1.59561306],\n   ],\n   \"bids\": [\n     [99.95, 9.995, 0.1],\n     [99.68, 24.92, 0.25]\n   ]\n },\n \"requestId\": \"sAlIlQAAAUaznM4BLSugK96cELw\",\n \"status\": \"Success\"\n}\n"
+          "content": "HTTP/1.1 200 OK\n{\n\t\"requestId\": \"JTsUBAAAAUZMyB1ULSugK96cEK0\",\n\t\"status\": \"Success\",\n\t\"wallet\":\n\t{\n\t\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\t\"walletStatus\": \"Active\",\n\t\t\"accounts\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"walletAccountId\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\"accountType\": \"Main\",\n\t\t\t\t\"accountStatus\": \"Active\",\n\t\t\t\t\"accountName\": \"Default EUR account\",\n\t\t\t\t\"accountBalance\":\n\t\t\t\t{\n\t\t\t\t\t\"balance\":\n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t},\n\t\t\t\t\t\"reservedBalance\":\n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"walletAccountId\": \"AAEAAAP2wHer5G2K21wABSU-sITEYlyw95pStLQLoT9TxrCHcJ9pPNo_\",\n\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\"accountType\": \"Main\",\n\t\t\t\t\"accountStatus\": \"Active\",\n\t\t\t\t\"accountName\": \"Default XBT account\",\n\t\t\t\t\"accountBalance\":\n\t\t\t\t{\n\t\t\t\t\t\"balance\":\n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t},\n\t\t\t\t\t\"reservedBalance\":\n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}\n}\n"
         }
       ]
     },
@@ -996,11 +941,41 @@ define({ api: [
     "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
-    "error": {
+    "success": {
       "examples": [
         {
-          "title": "Error-Response Example:",
-          "content": "HTTP/1.1 400 Bad Request\n{\n\t\"requestId\": \"JTsUBAAAAUZML_4ZLSugK96cELw\",\n\t\"status\": \"Error\",\n\t\"errorDetails\":\n\t[\n\t\t{\n\t\t\t\"simpleName\": \"WalletException\",\n\t\t\t\"description\": \"[AuthenticationError] Api-Token required\",\n\t\t\t\"errorName\": \"AuthenticationError\",\n\t\t\t\"errorNumber\": 4000000,\n\t\t\t\"errorMessageShort\": null,\n\t\t\t\"errorMessageLong\": null,\n\t\t\t\"fieldName\": null,\n\t\t\t\"limitsViolated\": null\n\t\t}\n\t]\n}\n"
+          "title": "Success-Response Example:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"count\": 5,\n  \"requestId\": \"sAlIlQAAAUazi16dLSugK96cEKA\",\n  \"status\": \"Success\"\n}\n"
+        }
+      ]
+    },
+    "group": "PublicTradeApiController.java",
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+  },
+  {
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response Example:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"requestId\": \"sAlIlQAAAUazlxXALSugK96cEL0\",\n  \"status\": \"Success\",\n  \"orderBook\": {\n    \"market\": {\n      \"id\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n      \"currencyCode1\": \"EUR\",\n      \"currencyCode2\": \"XBT\",\n      \"description\": \"Public EUR/BTC market\",\n      \"marketStatistics\": {\n        \"timestamp\": \"2014-06-17T07:06:24Z\",\n        \"buyItemCount\": 2,\n        \"sellItemCount\": 101,\n        \"buyItemAmount\": {\n          \"currency\": \"EUR\",\n          \"amount\": 24.92\n        },\n        \"sellItemAmount\": {\n          \"currency\": \"XBT\",\n          \"amount\": 32.93380179\n        },\n        \"buyPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 99.95\n        },\n        \"sellPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 100\n        },\n        \"lastPrice\": {\n          \"currency\": \"EUR\",\n          \"amount\": 103.995\n        }\n      },\n      \"priceGranularity\": {\n        \"currency\": \"EUR\",\n        \"amount\": 1e-8\n      }\n    },\n    \"asks\": [\n      [100, 150, 1.5],\n      [100.65, 9.62345449, 0.09561306]\n    ],\n    \"bids\": [\n      [99.95, 9.995, 0.1],\n      [99.5, 14.925, 0.15]\n    ]\n  }\n}\n"
+        }
+      ]
+    },
+    "group": "PublicTradeApiController.java",
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+  },
+  {
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response Example:",
+          "content": "HTTP/1.1 200 OK\n{\n\t\"requestId\": \"JTsUBAAAAUZMO8gILSugK96cEI4\",\n\t\"status\": \"Success\",\n\t\"tradeOrder\":\n\t{\n\t\t\"id\": \"AAEAAks1SVZ5LFDgIZr78JiwvgeLKY5bjbE-3K13LddaT1rE0Dwev4pI\",\n\t\t\"externalReferenceId\": null\n\t\t\"creationDateTime\": \"2014-05-30T08:25:24Z\",\n\t\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\t\"walletAccountId\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\t\"tradeOrderType\": \"BuyMarket\",\n\t\t\"tradeOrderStatus\": \"Created\",\n\t\t\"tradeOrderMarketStatus\": null,\n\t\t\"priceLimit\": null,\n\t\t\"fillRatio\": 0,\n\t\t\"amount\":\n\t\t{\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 400\n\t\t},\n\t\t\"buyAmount\":\n\t\t{\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 1\n\t\t},\n\t\t\"totalAmountSold\":\n\t\t{\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 0\n\t\t},\n\t\t\"totalAmountBought\":\n\t\t{\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 0\n\t\t}\n\t}\n}\n"
         }
       ]
     },
@@ -1012,40 +987,25 @@ define({ api: [
   },
   {
     "type": "get",
-    "url": "/api/1/wallet/get/{walletId}",
+    "url": "/api/1/wallet/get",
     "title": "Wallet get",
     "name": "Wallet_get",
     "group": "Wallet",
     "version": "1.0.0",
-    "description": "Returns user's wallet data including associated accounts",
-    "permission": "registered user",
+    "description": "Returns the Wallet and account info",
+    "permission": "authenticated user",
     "parameter": {
       "fields": {
         "Parameter": [
           {
             "group": "Parameter",
             "type": "String",
-            "field": "walletId",
-            "optional": false,
-            "description": "unique Id of the wallet"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "field": "walletAccountCurrency",
+            "field": "currency",
             "optional": true,
-            "description": "limit responce to given currencies"
+            "description": "a WalletAccount currency, if only WalletAccounts with that currency should be returned in the account-list"
           }
         ]
       }
-    },
-    "success": {
-      "examples": [
-        {
-          "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n\t\"requestId\": \"JTsUBAAAAUZMyB1ULSugK96cEK0\",\n\t\"status\": \"Success\",\n\t\"userId\": \"AAEAAAMk7LOCCHq-p2HQI3963p91f54ukj2cICQuy4Dgqz69VJqLNxbk\",\n\t\"wallet\": \n\t{\n\t\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\t\"creationDateTime\": \"2014-05-30T07:55:34Z\",\n\t\t\"countryCode\": \"DE\",\n\t\t\"feeGroupId\": null,\n\t\t\"limitGroupId\": null,\n\t\t\"subsidiaryId\": 1,\n\t\t\"walletStatus\": \"Active\",\n\t\t\"walletType\": \"Full\",\n\t\t\"accounts\": \n\t\t[\t\t\n\t\t\t{\n\t\t\t\t\"accountNumber\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\t\t\t\"creationDateTime\": \"2014-05-30T07:55:35Z\",\n\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\"accountType\": \"Main\",\n\t\t\t\t\"accountStatus\": \"Active\",\n\t\t\t\t\"accountName\": \"Default EUR account\",\n\t\t\t\t\"accountDescription\": null,\n\t\t\t\t\"accountBalance\": \n\t\t\t\t{\n\t\t\t\t\t\"balance\": \n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t},\n\t\t\t\t\t\"reservedBalance\": \n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"accountNumber\": \"AAEAAAP2wHer5G2K21wABSU-sITEYlyw95pStLQLoT9TxrCHcJ9pPNo_\",\n\t\t\t\t\"creationDateTime\": \"2014-05-30T07:55:35Z\",\n\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\"accountType\": \"Main\",\n\t\t\t\t\"accountStatus\": \"Active\",\n\t\t\t\t\"accountName\": \"Default XBT account\",\n\t\t\t\t\"accountDescription\": null,\n\t\t\t\t\"accountBalance\": \n\t\t\t\t{\n\t\t\t\t\t\"balance\": \n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t},\n\t\t\t\t\t\"reservedBalance\": \n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t],\n\t\t\"owner\": \n\t\t{\n\t\t\t\"type\": \"User\",\n\t\t\t\"id\": \"AAEAAAMk7LOCCHq-p2HQI3963p91f54ukj2cICQuy4Dgqz69VJqLNxbk\"\n\t\t}\n\t}\n}\n"
-        }
-      ]
     },
     "error": {
       "examples": [
@@ -1055,6 +1015,14 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/WalletApiController.java"
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response Example:",
+          "content": "HTTP/1.1 200 OK\n{\n\t\"requestId\": \"JTsUBAAAAUZMyB1ULSugK96cEK0\",\n\t\"status\": \"Success\",\n\t\"wallet\":\n\t{\n\t\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\t\"walletStatus\": \"Active\",\n\t\t\"accounts\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"walletAccountId\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\"accountType\": \"Main\",\n\t\t\t\t\"accountStatus\": \"Active\",\n\t\t\t\t\"accountName\": \"Default EUR account\",\n\t\t\t\t\"accountBalance\":\n\t\t\t\t{\n\t\t\t\t\t\"balance\":\n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t},\n\t\t\t\t\t\"reservedBalance\":\n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"walletAccountId\": \"AAEAAAP2wHer5G2K21wABSU-sITEYlyw95pStLQLoT9TxrCHcJ9pPNo_\",\n\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\"accountType\": \"Main\",\n\t\t\t\t\"accountStatus\": \"Active\",\n\t\t\t\t\"accountName\": \"Default XBT account\",\n\t\t\t\t\"accountBalance\":\n\t\t\t\t{\n\t\t\t\t\t\"balance\":\n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t},\n\t\t\t\t\t\"reservedBalance\":\n\t\t\t\t\t{\n\t\t\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\t\t\"amount\": 0\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}\n}\n"
+        }
+      ]
+    },
+    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   }
 ] });

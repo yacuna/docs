@@ -13,7 +13,7 @@ API answers are in JSON format.
 
 <strong>Example of HTTP header data needed for the call authentication:</strong>
 
-<pre class="prettyprint language-json prettyprinted" data-type="json" style="">
+<pre class="prettyprint" data-type="json">
 <code>
 {
 	"Api-Token-Id": "AAEAAAgfi0NjCp9rrgTVM2-BBrP6AgkykwBEwFj74fcHFkNpmcsgjLph",
@@ -24,7 +24,7 @@ API answers are in JSON format.
 </pre>
 
 <strong>Example code in JavaScript how to calculate Api-token</strong>
-<pre class="prettyprint language-javascript prettyprinted" data-type="json" style="">
+<pre class="prettyprint language-javascript">
 <code>
 function createTokenHeaders(requestMethod, requestUrl, requestQueryString, requestBody) {
 	if (isEmpty(tokenId)) {
