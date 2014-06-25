@@ -987,7 +987,7 @@
   },
   {
     "type": "get",
-    "url": "/api/1/public/orderbook",
+    "url": "/api/1/charts/orderbook",
     "title": "Orderbook",
     "name": "Orderbook",
     "group": "Public_Charts",
@@ -1018,7 +1018,7 @@
       "examples": [
         {
           "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n\t\"bids\": \n\t[\n\t\t[\n\t\t\t20,\n\t\t\t0.7879525\n\t\t],\n\t\t[\n\t\t\t2.5,\n\t\t\t1\n\t\t],\n\t\t[\n\t\t\t2,\n\t\t\t203\n\t\t],\n\t\t[\n\t\t\t1.99,\n\t\t\t3\n\t\t],\n\t\t[\n\t\t\t1.895,\n\t\t\t3.0223\n\t\t],\n\t\t[\n\t\t\t1.543,\n\t\t\t2\n\t\t]\n\t],\n\t\"asks\": \n\t[\n\t\t[\n\t\t\t104,\n\t\t\t1\n\t\t],\n\t\t[\n\t\t\t104.75,\n\t\t\t116.67\n\t\t],\n\t\t[\n\t\t\t104.97,\n\t\t\t23.1278\n\t\t],\n\t\t[\n\t\t\t12345678.90876543,\n\t\t\t1\n\t\t],\n\t\t[\n\t\t\t10000000000,\n\t\t\t0.1\n\t\t],\n\t\t[\n\t\t\t12345678901,\n\t\t\t2\n\t\t]\n\t]\n}\n"
+          "content": "HTTP/1.1 200 OK\n{\n\t\"bids\":\n\t[\n\t\t[20, 0.7879525],\n\t\t[2.5, 1],\n\t\t[2, 203],\n\t\t[1.99, 3],\n\t\t[1.895, 3.0223],\n\t\t[1.543, 2]\n\t],\n\t\"asks\":\n\t[\n\t\t[104, 1],\n\t\t[104.75, 116.67],\n\t\t[104.97, 23.1278],\n\t\t[12345678.90876543, 1],\n\t\t[10000000000, 0.1],\n\t\t[12345678901, 2]\n\t]\n}\n"
         }
       ]
     },
@@ -1034,7 +1034,7 @@
   },
   {
     "type": "get",
-    "url": "/api/1/public/trades",
+    "url": "/api/1/charts/trades",
     "title": "Trades",
     "name": "Trades",
     "group": "Public_Charts",
