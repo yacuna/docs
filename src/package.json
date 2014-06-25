@@ -1,7 +1,7 @@
 {
   "name": "YACUNA API",
   "version": "1.0.0",
-  "description": "Trading API Description",
+  "description": "Trading API Specification",
   "apidoc": "This is a description, it will be ignored if parameter apidocFilename exist.",
   "apidocFilename": "yacuna.api.md"
 }
