@@ -5,6 +5,7 @@
 To be able to use the Yacuna Trading API you need a valid Yacuna account.<br>
 In your settings area you should get "API Token Id" and "API Token Secret".<br>
 Using those data you can generate the "Api-Token" to be passed with each API call within HTTP headers.<br>
+As salt for Api-token calculation unix timestamp in milliseconds should be used.<br>
 As additional security option one time password can be added.
 <p>
 Method parameters are sent via HTTP POST.
