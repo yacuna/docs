@@ -4,8 +4,51 @@
 
 To be able to use the Yacuna Trading API you need a valid Yacuna account.<br>
 In your settings area you should get "API Token Id" and "API Token Secret".<br>
-Using those data you can generate the "Api-Token" to be passed with each API call within HTTP headers.<br>
+Using those data you can generate the "Api-Token" to be calculated and passed with each API call within HTTP headers.<br>
 As salt for Api-token calculation unix timestamp in milliseconds should be used.<br>
+
+<p><strong>Inputs for Api-token calculation</strong></p>
+<table>
+	<thead>
+		<tr>
+			<th style="width: 30%">Field</th>
+			<th style="width: 70%">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="code">Salt</td>
+			<td>Timestamp in milliseconds</td>
+		</tr>
+		<tr>
+			<td class="code">API secret</td>
+			<td>From your Yacuna account</td>
+		</tr>
+		<tr>
+			<td class="code">Http method of request</td>
+			<td>GET, POST, etc.</td>
+		</tr>
+		<tr>
+			<td class="code">URI path of request</td>
+			<td>eg. /api/1/wallet/get&currency=EUR</td>
+		</tr>
+		<tr>
+			<td class="code">Separator character</td>
+			<td>@</td>
+		</tr>
+	</tbody>
+</table>
+
+Plain input for Api-Token calculation: 
+<pre class="prettyprint language-html prettyprinted" data-type="example"><code><span class="pln">1404203385000@0ab0ac9aa5fb881b30d56cb40368c8a2@GET@/api/1/wallet/get</span></code></pre>
+
+Api token creation algorithm: 
+<pre class="prettyprint language-html prettyprinted" data-type="algorithm"><code><span class="pln">salt+T+hex(sha512(plain input))</span></code></pre>
+
+Api token result
+<pre class="prettyprint language-html prettyprinted" data-type="example"><code><span class="pln">1404203385000T0e584fdc9905755173dac10ac02d0bdd24ce2eef5df41cee5e4daca750d461c9c5bc301b74deb3f566389b8008496a86ca3188034cab853a453c354bb2a1e647</span></code></pre>
+
+<p>
 As additional security option one time password can be added.
 <p>
 Method parameters are sent via HTTP POST.
