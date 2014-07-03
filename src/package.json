@@ -1,7 +1,17 @@
 {
-  "name": "YACUNA API",
-  "version": "1.0.0",
-  "description": "Trading API Specification",
-  "apidoc": "This is a description, it will be ignored if parameter apidocFilename exist.",
-  "apidocFilename": "yacuna.api.md"
+	"name": "YACUNA API",
+	"version": "1.0.0",
+	"description": "Trading API Specification",
+	"apidoc": {
+		"title": "YACUNA Trading API Specification",
+		"url" : "http://docs.yacuna.com/api/",
+		"header": {
+			"title": "General",
+			"filename": "yacuna.api.header.md"
+		},
+		"footer": {
+			"title": "Examples",
+			"filename": "yacuna.api.footer.md"
+		}
+	}
 }
