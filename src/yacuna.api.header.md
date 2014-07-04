@@ -89,6 +89,34 @@ function createTokenHeaders(requestMethod, requestUrl, requestQueryString, reque
 		'Api-Token-OTP': tokenOTP
 	};
 }
+
+function createRequestBodyForSignature(elements) {
+	if (!elements) {
+		return '';
+	}
+	var keys = [];
+	for (key in elements) {
+		keys.push(key);
+	}
+	keys.sort();
+	var result = '';
+	for (i = 0; i < keys.length; i++) {
+		key = keys[i];
+		value = elements[key];
+		if (value instanceof File) {
+			value = value.name;
+		}
+		if (value === null) {
+			value = '';
+		}
+		if (result === '') {
+			result = key + "=" + value;
+		} else {
+			result = result + "&" + key + "=" + value;
+		}
+	}
+	return result;
+}
 </code>
 </pre>
 
