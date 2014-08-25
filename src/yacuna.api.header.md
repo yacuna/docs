@@ -120,3 +120,31 @@ function createRequestBodyForSignature(elements) {
 </code>
 </pre>
 
+<strong>Example code in Perl how to calculate Api-token</strong>
+<pre class="prettyprint language-perl">
+<code>
+
+my $requestParams = ["param1=value1", "param1=value1", "param1=value1"];
+my $qry = defined $requestParams?(join "&", sort @{$requestParams}):undef;
+my $body = '';
+if('GET' eq $httpMethod && $qry ne ''){
+	$restPath .= "?$qry";
+}
+elsif('POST' eq $httpMethod){
+	$body = $qry;
+}
+
+my $apiToken = &prepareAuth($basePath.$restPath, $body, $httpMethod, $apiSecret);
+
+sub prepareAuth(){
+	my ($path, $body, $httpMethod, $apiSecret) = @_;
+	my $tokenSalt = ''.time*1000;
+	my $hashInput = $tokenSalt.'@'.$apiSecret.'@'.$httpMethod.'@'.$path;
+	$hashInput .= '@'.$body if '' ne $body;
+	my $apiToken = $tokenSalt.'T'.(sha512_hex($hashInput));
+
+	return $apiToken;
+}
+</code>
+</pre>
+
