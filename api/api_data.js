@@ -6,7 +6,7 @@ define({ api: [
     "name": "Deal_count",
     "group": "Deal",
     "version": "1.0.0",
-    "description": "Retrieves the number of deals with the given properties",
+    "description": "<p>Retrieves the number of deals with the given properties</p>",
     "permission": "authenticated API user",
     "parameter": {
       "fields": {
@@ -16,49 +16,49 @@ define({ api: [
             "type": "String",
             "field": "walletAccountId",
             "optional": false,
-            "description": "By wallet account Id"
+            "description": "<p>By wallet account Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "marketId",
             "optional": true,
-            "description": "By market Id"
+            "description": "<p>By market Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "orderId",
             "optional": true,
-            "description": "By order Id"
+            "description": "<p>By order Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeDealType",
             "optional": true,
-            "description": "By order type"
+            "description": "<p>By order type</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeDealStatus",
             "optional": true,
-            "description": "By order status"
+            "description": "<p>By order status</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "fromDate",
             "optional": true,
-            "description": "Begin date range in UTC, in 'yyyy-MM-ddTHH:mm:ssZ' format, e.g. '2014-06-19T14:31:23Z'"
+            "description": "<p>Begin date range in UTC, in &#39;yyyy-MM-ddTHH:mm:ssZ&#39; format, e.g. &#39;2014-06-19T14:31:23Z&#39;</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "untilDate",
             "optional": true,
-            "description": "End date range in UTC, in 'yyyy-MM-ddTHH:mm:ssZ' format, e.g. '2014-06-19T14:31:23Z'"
+            "description": "<p>End date range in UTC, in &#39;yyyy-MM-ddTHH:mm:ssZ&#39; format, e.g. &#39;2014-06-19T14:31:23Z&#39;</p>"
           }
         ]
       }
@@ -79,7 +79,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -88,7 +88,7 @@ define({ api: [
     "name": "Deal_get",
     "group": "Deal",
     "version": "1.0.0",
-    "description": "Retrieves an existing Deal with the given ID, provided the currently authenticated user has access to it.",
+    "description": "<p>Retrieves an existing Deal with the given ID, provided the currently authenticated user has access to it.</p>",
     "permission": "authenticated API user",
     "parameter": {
       "fields": {
@@ -98,7 +98,7 @@ define({ api: [
             "type": "String",
             "field": "dealId",
             "optional": false,
-            "description": "Deal Id"
+            "description": "<p>Deal Id</p>"
           }
         ]
       }
@@ -119,7 +119,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -128,7 +128,7 @@ define({ api: [
     "name": "Deal_list",
     "group": "Deal",
     "version": "1.0.0",
-    "description": "Retrieves the deals with the given properties",
+    "description": "<p>Retrieves the deals with the given properties</p>",
     "permission": "authenticated API user",
     "parameter": {
       "fields": {
@@ -138,49 +138,49 @@ define({ api: [
             "type": "String",
             "field": "walletAccountId",
             "optional": false,
-            "description": "By wallet account Id"
+            "description": "<p>By wallet account Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "marketId",
             "optional": true,
-            "description": "By market Id"
+            "description": "<p>By market Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "orderId",
             "optional": true,
-            "description": "By order Id"
+            "description": "<p>By order Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeDealType",
             "optional": true,
-            "description": "By order type"
+            "description": "<p>By order type</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeDealStatus",
             "optional": true,
-            "description": "By order status"
+            "description": "<p>By order status</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "fromDate",
             "optional": true,
-            "description": "Begin date range in UTC, in 'yyyy-MM-ddTHH:mm:ssZ' format, e.g. '2014-06-19T14:31:23Z'"
+            "description": "<p>Begin date range in UTC, in &#39;yyyy-MM-ddTHH:mm:ssZ&#39; format, e.g. &#39;2014-06-19T14:31:23Z&#39;</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "untilDate",
             "optional": true,
-            "description": "End date range in UTC, in 'yyyy-MM-ddTHH:mm:ssZ' format, e.g. '2014-06-19T14:31:23Z'"
+            "description": "<p>End date range in UTC, in &#39;yyyy-MM-ddTHH:mm:ssZ&#39; format, e.g. &#39;2014-06-19T14:31:23Z&#39;</p>"
           },
           {
             "group": "Parameter",
@@ -188,7 +188,7 @@ define({ api: [
             "field": "startWith",
             "defaultValue": "0",
             "optional": true,
-            "description": "the number of items to skip in the result-set (paging)"
+            "description": "<p>the number of items to skip in the result-set (paging)</p>"
           },
           {
             "group": "Parameter",
@@ -196,7 +196,7 @@ define({ api: [
             "field": "count",
             "defaultValue": "20",
             "optional": true,
-            "description": "the number of items to return in the result-set (paging)"
+            "description": "<p>the number of items to return in the result-set (paging)</p>"
           }
         ]
       }
@@ -217,7 +217,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -226,7 +226,7 @@ define({ api: [
     "name": "MarketDepth_get",
     "group": "Market",
     "version": "1.0.0",
-    "description": "Returns the MarketDepth for the market wit the given currencies.\nSupports ETag HTTP cache headers (If-None-Match).\nEach row in the bids and asks contains the following values:\n- price in currency1\n- accumulated amount in currency1\n- accumulated amount in currency2",
+    "description": "<p>Returns the MarketDepth for the market wit the given currencies.Supports ETag HTTP cache headers (If-None-Match).Each row in the bids and asks contains the following values:</p><ul><li>price in currency1</li><li>accumulated amount in currency1</li><li>accumulated amount in currency2</li></ul>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -236,14 +236,14 @@ define({ api: [
             "type": "String",
             "field": "currency1",
             "optional": false,
-            "description": "one of the market currencies, e.g. EUR"
+            "description": "<p>one of the market currencies, e.g. EUR</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "currency2",
             "optional": false,
-            "description": "the other market currency, e.g. XBT"
+            "description": "<p>the other market currency, e.g. XBT</p>"
           }
         ]
       }
@@ -264,7 +264,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -273,7 +273,7 @@ define({ api: [
     "name": "Market_count",
     "group": "Market",
     "version": "1.0.0",
-    "description": "Counts available markets with optional currency filters",
+    "description": "<p>Counts available markets with optional currency filters</p>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -283,14 +283,14 @@ define({ api: [
             "type": "String",
             "field": "currency1",
             "optional": true,
-            "description": "one of the market currencies, e.g. EUR"
+            "description": "<p>one of the market currencies, e.g. EUR</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "currency2",
             "optional": true,
-            "description": "the other market currency, e.g. XBT"
+            "description": "<p>the other market currency, e.g. XBT</p>"
           }
         ]
       }
@@ -311,7 +311,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -320,7 +320,7 @@ define({ api: [
     "name": "Market_list",
     "group": "Market",
     "version": "1.0.0",
-    "description": "Lists available markets with optional currency filters",
+    "description": "<p>Lists available markets with optional currency filters</p>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -330,14 +330,14 @@ define({ api: [
             "type": "String",
             "field": "currency1",
             "optional": true,
-            "description": "one of the market currencies, e.g. EUR"
+            "description": "<p>one of the market currencies, e.g. EUR</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "currency2",
             "optional": true,
-            "description": "the other market currency, e.g. XBT"
+            "description": "<p>the other market currency, e.g. XBT</p>"
           },
           {
             "group": "Parameter",
@@ -345,7 +345,7 @@ define({ api: [
             "field": "startWith",
             "defaultValue": "0",
             "optional": true,
-            "description": "the number of items to skip in the result-set (paging)"
+            "description": "<p>the number of items to skip in the result-set (paging)</p>"
           },
           {
             "group": "Parameter",
@@ -353,7 +353,7 @@ define({ api: [
             "field": "count",
             "defaultValue": "20",
             "optional": true,
-            "description": "the number of items to return in the result-set, between 1 and 1000 (paging)"
+            "description": "<p>the number of items to return in the result-set, between 1 and 1000 (paging)</p>"
           }
         ]
       }
@@ -374,7 +374,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -383,7 +383,7 @@ define({ api: [
     "name": "OrderBook_get",
     "group": "Market",
     "version": "1.0.0",
-    "description": "Returns the OrderBook for the market wit the given currencies.\nSupports ETag HTTP cache headers (If-None-Match).\nEach row in the bids and asks contains the following values:\n- price in currency1\n- amount in currency1\n- amount in currency2",
+    "description": "<p>Returns the OrderBook for the market wit the given currencies.Supports ETag HTTP cache headers (If-None-Match).Each row in the bids and asks contains the following values:</p><ul><li>price in currency1</li><li>amount in currency1</li><li>amount in currency2</li></ul>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -393,14 +393,14 @@ define({ api: [
             "type": "String",
             "field": "currency1",
             "optional": false,
-            "description": "one of the market currencies, e.g. EUR"
+            "description": "<p>one of the market currencies, e.g. EUR</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "currency2",
             "optional": false,
-            "description": "the other market currency, e.g. XBT"
+            "description": "<p>the other market currency, e.g. XBT</p>"
           }
         ]
       }
@@ -421,7 +421,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -430,7 +430,7 @@ define({ api: [
     "name": "Order_Get",
     "group": "Order",
     "version": "1.0.0",
-    "description": "Retrieves an existing Order with the given ID, provided the currently authenticated user has access to it.",
+    "description": "<p>Retrieves an existing Order with the given ID, provided the currently authenticated user has access to it.</p>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -440,7 +440,7 @@ define({ api: [
             "type": "String",
             "field": "orderId",
             "optional": false,
-            "description": "unique ID of the order"
+            "description": "<p>unique ID of the order</p>"
           }
         ]
       }
@@ -461,7 +461,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "post",
@@ -470,7 +470,7 @@ define({ api: [
     "name": "Order_cancel",
     "group": "Order",
     "version": "1.0.0",
-    "description": "Cancels an existing Order with the given ID, provided the currently authenticated user has access to it.",
+    "description": "<p>Cancels an existing Order with the given ID, provided the currently authenticated user has access to it.</p>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -480,7 +480,7 @@ define({ api: [
             "type": "String",
             "field": "orderId",
             "optional": false,
-            "description": "unique ID of the order"
+            "description": "<p>unique ID of the order</p>"
           }
         ]
       }
@@ -501,7 +501,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "post",
@@ -510,7 +510,7 @@ define({ api: [
     "name": "Order_confirm",
     "group": "Order",
     "version": "1.0.0",
-    "description": "Confirms an existing Order with the given ID, provided the currently authenticated user has access to it.",
+    "description": "<p>Confirms an existing Order with the given ID, provided the currently authenticated user has access to it.</p>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -520,7 +520,7 @@ define({ api: [
             "type": "String",
             "field": "orderId",
             "optional": false,
-            "description": "unique ID of the order"
+            "description": "<p>unique ID of the order</p>"
           }
         ]
       }
@@ -541,7 +541,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -550,7 +550,7 @@ define({ api: [
     "name": "Order_count",
     "group": "Order",
     "version": "1.0.0",
-    "description": "Retrieves the number of orders with the given properties",
+    "description": "<p>Retrieves the number of orders with the given properties</p>",
     "permission": "authenticated API user",
     "parameter": {
       "fields": {
@@ -560,49 +560,49 @@ define({ api: [
             "type": "String",
             "field": "walletAccountId",
             "optional": false,
-            "description": "By wallet account Id"
+            "description": "<p>By wallet account Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "marketId",
             "optional": true,
-            "description": "By market Id"
+            "description": "<p>By market Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderType",
             "optional": true,
-            "description": "By order type"
+            "description": "<p>By order type</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderStatus",
             "optional": true,
-            "description": "By order status"
+            "description": "<p>By order status</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderMarketStatus",
             "optional": true,
-            "description": "by order market status"
+            "description": "<p>by order market status</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "fromDate",
             "optional": true,
-            "description": "Begin date range in UTC, in 'yyyy-MM-ddTHH:mm:ssZ' format, e.g. '2014-06-19T14:31:23Z'"
+            "description": "<p>Begin date range in UTC, in &#39;yyyy-MM-ddTHH:mm:ssZ&#39; format, e.g. &#39;2014-06-19T14:31:23Z&#39;</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "untilDate",
             "optional": true,
-            "description": "End date range in UTC, in 'yyyy-MM-ddTHH:mm:ssZ' format, e.g. '2014-06-19T14:31:23Z'"
+            "description": "<p>End date range in UTC, in &#39;yyyy-MM-ddTHH:mm:ssZ&#39; format, e.g. &#39;2014-06-19T14:31:23Z&#39;</p>"
           }
         ]
       }
@@ -623,7 +623,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "post",
@@ -632,7 +632,7 @@ define({ api: [
     "name": "Order_create",
     "group": "Order",
     "version": "1.0.0",
-    "description": "Creates new market order",
+    "description": "<p>Creates new market order</p>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -642,77 +642,77 @@ define({ api: [
             "type": "String",
             "field": "currency1",
             "optional": false,
-            "description": "one of the market currencies, e.g. EUR"
+            "description": "<p>one of the market currencies, e.g. EUR</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "currency2",
             "optional": false,
-            "description": "the other market currency, e.g. XBT"
+            "description": "<p>the other market currency, e.g. XBT</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "walletAccountId",
             "optional": false,
-            "description": "your wallet account ID in the currency you want to sell"
+            "description": "<p>your wallet account ID in the currency you want to sell</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderType",
             "optional": false,
-            "description": "value from the list {\"BuyLimit\", \"BuyMarket\", \"SellLimit\", \"SellMarket\"}"
+            "description": "<p>value from the list {&quot;BuyLimit&quot;, &quot;BuyMarket&quot;, &quot;SellLimit&quot;, &quot;SellMarket&quot;}</p>"
           },
           {
             "group": "Parameter",
             "type": "Number",
             "field": "sellAmount",
             "optional": true,
-            "description": "amount to sell, required for {\"BuyMarket\", \"SellLimit\", \"SellMarket\"}"
+            "description": "<p>amount to sell, required for {&quot;BuyMarket&quot;, &quot;SellLimit&quot;, &quot;SellMarket&quot;}</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "sellCurrency",
             "optional": true,
-            "description": "currency of amount to sell, required for {\"BuyMarket\", \"SellLimit\", \"SellMarket\"}, must match currency of WalletAccountId"
+            "description": "<p>currency of amount to sell, required for {&quot;BuyMarket&quot;, &quot;SellLimit&quot;, &quot;SellMarket&quot;}, must match currency of WalletAccountId</p>"
           },
           {
             "group": "Parameter",
             "type": "Number",
             "field": "buyAmount",
             "optional": true,
-            "description": "amount to buy, required for {\"BuyLimit\", \"BuyMarket\"}"
+            "description": "<p>amount to buy, required for {&quot;BuyLimit&quot;, &quot;BuyMarket&quot;}</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "buyCurrency",
             "optional": true,
-            "description": "currency of amount to buy, required for {\"BuyLimit\", \"BuyMarket\"}, must be different from currency of WalletAccountId"
+            "description": "<p>currency of amount to buy, required for {&quot;BuyLimit&quot;, &quot;BuyMarket&quot;}, must be different from currency of WalletAccountId</p>"
           },
           {
             "group": "Parameter",
             "type": "Number",
             "field": "priceLimitAmount",
             "optional": true,
-            "description": "set price limit amount, required for {\"BuyLimit\", \"SellLimit\"}"
+            "description": "<p>set price limit amount, required for {&quot;BuyLimit&quot;, &quot;SellLimit&quot;}</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "priceLimitCurrency",
             "optional": true,
-            "description": "set price limit currency, required for {\"BuyLimit\", \"SellLimit\"}, must match market primary currency"
+            "description": "<p>set price limit currency, required for {&quot;BuyLimit&quot;, &quot;SellLimit&quot;}, must match market primary currency</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "externalReferenceId",
             "optional": true,
-            "description": "set your own reference id for order, must be unique in walletAccountId-scope"
+            "description": "<p>set your own reference id for order, must be unique in walletAccountId-scope</p>"
           }
         ]
       }
@@ -733,7 +733,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -742,7 +742,7 @@ define({ api: [
     "name": "Order_get_by_external_reference_Id",
     "group": "Order",
     "version": "1.0.0",
-    "description": "Retrieves an existing Order with the given external reference ID, provided the currently authenticated user has access to it. Returns the same data as <a href=\"#api-Wallet-Wallet_get\">Wallet Get</a>",
+    "description": "<p>Retrieves an existing Order with the given external reference ID, provided the currently authenticated user has access to it. Returns the same data as <a href=\"#api-Wallet-Wallet_get\">Wallet Get</a></p>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -752,14 +752,14 @@ define({ api: [
             "type": "String",
             "field": "externalReferenceId",
             "optional": false,
-            "description": "external reference ID of the order"
+            "description": "<p>external reference ID of the order</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "walletAccountId",
             "optional": false,
-            "description": "wallet account Id"
+            "description": "<p>wallet account Id</p>"
           }
         ]
       }
@@ -780,7 +780,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -789,7 +789,7 @@ define({ api: [
     "name": "Order_list",
     "group": "Order",
     "version": "1.0.0",
-    "description": "Retrieves the list of orders with the given properties",
+    "description": "<p>Retrieves the list of orders with the given properties</p>",
     "permission": "authenticated API user",
     "parameter": {
       "fields": {
@@ -799,49 +799,49 @@ define({ api: [
             "type": "String",
             "field": "walletAccountId",
             "optional": false,
-            "description": "By wallet account Id"
+            "description": "<p>By wallet account Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "marketId",
             "optional": true,
-            "description": "By market Id"
+            "description": "<p>By market Id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderType",
             "optional": true,
-            "description": "By order type"
+            "description": "<p>By order type</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderStatus",
             "optional": true,
-            "description": "By order status"
+            "description": "<p>By order status</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderMarketStatus",
             "optional": true,
-            "description": "by order market status"
+            "description": "<p>by order market status</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "fromDate",
             "optional": true,
-            "description": "Begin date range in UTC, in 'yyyy-MM-ddTHH:mm:ssZ' format, e.g. '2014-06-19T14:31:23Z'"
+            "description": "<p>Begin date range in UTC, in &#39;yyyy-MM-ddTHH:mm:ssZ&#39; format, e.g. &#39;2014-06-19T14:31:23Z&#39;</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "untilDate",
             "optional": true,
-            "description": "End date range in UTC, in 'yyyy-MM-ddTHH:mm:ssZ' format, e.g. '2014-06-19T14:31:23Z'"
+            "description": "<p>End date range in UTC, in &#39;yyyy-MM-ddTHH:mm:ssZ&#39; format, e.g. &#39;2014-06-19T14:31:23Z&#39;</p>"
           },
           {
             "group": "Parameter",
@@ -849,7 +849,7 @@ define({ api: [
             "field": "startWith",
             "defaultValue": "0",
             "optional": true,
-            "description": "the number of items to skip in the result-set (paging)"
+            "description": "<p>the number of items to skip in the result-set (paging)</p>"
           },
           {
             "group": "Parameter",
@@ -857,7 +857,7 @@ define({ api: [
             "field": "count",
             "defaultValue": "20",
             "optional": true,
-            "description": "the number of items to return in the result-set (paging)"
+            "description": "<p>the number of items to return in the result-set (paging)</p>"
           }
         ]
       }
@@ -878,7 +878,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "success": {
@@ -889,11 +889,11 @@ define({ api: [
         }
       ]
     },
-    "group": "PublicTradeApiController.java",
+    "group": "PublicTradeApiController_java",
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "success": {
@@ -904,11 +904,11 @@ define({ api: [
         }
       ]
     },
-    "group": "PublicTradeApiController.java",
+    "group": "PublicTradeApiController_java",
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "success": {
@@ -919,11 +919,11 @@ define({ api: [
         }
       ]
     },
-    "group": "PublicTradeApiController.java",
+    "group": "PublicTradeApiController_java",
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "success": {
@@ -934,11 +934,11 @@ define({ api: [
         }
       ]
     },
-    "group": "PublicTradeApiController.java",
+    "group": "PublicTradeApiController_java",
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "success": {
@@ -949,11 +949,11 @@ define({ api: [
         }
       ]
     },
-    "group": "PublicTradeApiController.java",
+    "group": "PublicTradeApiController_java",
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "error": {
@@ -964,11 +964,11 @@ define({ api: [
         }
       ]
     },
-    "group": "PublicTradeApiController.java",
+    "group": "PublicTradeApiController_java",
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "success": {
@@ -979,11 +979,11 @@ define({ api: [
         }
       ]
     },
-    "group": "PublicTradeApiController.java",
+    "group": "PublicTradeApiController_java",
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   },
   {
     "type": "get",
@@ -992,7 +992,7 @@ define({ api: [
     "name": "Orderbook",
     "group": "Public_Charts",
     "version": "1.0.0",
-    "description": "Retrieves the orderbook for a public market for the given currency pair",
+    "description": "<p>Retrieves the orderbook for a public market for the given currency pair</p>",
     "permission": "public",
     "parameter": {
       "fields": {
@@ -1002,14 +1002,14 @@ define({ api: [
             "type": "String",
             "field": "currency1",
             "optional": false,
-            "description": "one of the market currencies, e.g. EUR"
+            "description": "<p>one of the market currencies, e.g. EUR</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "currency2",
             "optional": false,
-            "description": "the other market currency, e.g. XBT"
+            "description": "<p>the other market currency, e.g. XBT</p>"
           }
         ]
       }
@@ -1030,7 +1030,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/BitcoinChartsApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/BitcoinChartsApiController.java"
   },
   {
     "type": "get",
@@ -1039,7 +1039,7 @@ define({ api: [
     "name": "Trades",
     "group": "Public_Charts",
     "version": "1.0.0",
-    "description": "Retrieves the trades for a public market for the given currency pair",
+    "description": "<p>Retrieves the trades for a public market for the given currency pair</p>",
     "permission": "public",
     "parameter": {
       "fields": {
@@ -1049,21 +1049,21 @@ define({ api: [
             "type": "String",
             "field": "currency1",
             "optional": false,
-            "description": "one of the market currencies, e.g. EUR"
+            "description": "<p>one of the market currencies, e.g. EUR</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "currency2",
             "optional": false,
-            "description": "the other market currency, e.g. XBT"
+            "description": "<p>the other market currency, e.g. XBT</p>"
           },
           {
             "group": "Parameter",
             "type": "Number",
             "field": "since",
             "optional": false,
-            "description": "Unix-timestamp in seconds"
+            "description": "<p>Unix-timestamp in seconds</p>"
           }
         ]
       }
@@ -1084,7 +1084,7 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/BitcoinChartsApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/BitcoinChartsApiController.java"
   },
   {
     "type": "get",
@@ -1093,7 +1093,7 @@ define({ api: [
     "name": "Wallet_get",
     "group": "Wallet",
     "version": "1.0.0",
-    "description": "Returns the Wallet and account info",
+    "description": "<p>Returns the Wallet and account info</p>",
     "permission": "authenticated user",
     "parameter": {
       "fields": {
@@ -1103,7 +1103,7 @@ define({ api: [
             "type": "String",
             "field": "currency",
             "optional": true,
-            "description": "a WalletAccount currency, if only WalletAccounts with that currency should be returned in the account-list"
+            "description": "<p>a WalletAccount currency, if only WalletAccounts with that currency should be returned in the account-list</p>"
           }
         ]
       }
@@ -1124,6 +1124,6 @@ define({ api: [
         }
       ]
     },
-    "filename": "/home/natasha/workspace/monopoto.server.trunk/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
+    "filename": "/home/andrei/workspace/monopoto/webapp/external/src/main/java/com/trimplement/wallet/server/monopoto/webapp/external/controller/api_1_0_0/PublicTradeApiController.java"
   }
 ] });

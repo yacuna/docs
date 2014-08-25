@@ -4,7 +4,7 @@
 	"description": "Trading API Specification",
 	"apidoc": {
 		"title": "YACUNA Trading API Specification",
-		"url" : "http://docs.yacuna.com/api/",
+		"url" : "https://yacuna.com",
 		"header": {
 			"title": "General",
 			"filename": "yacuna.api.header.md"
