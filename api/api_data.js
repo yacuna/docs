@@ -987,7 +987,7 @@ define({ api: [
   },
   {
     "type": "get",
-    "url": "/api/1/charts/orderbook",
+    "url": "/api/1/charts/orderbook/{currency1}/{currency2}",
     "title": "Orderbook",
     "name": "Orderbook",
     "group": "Public_Charts",
@@ -1034,7 +1034,7 @@ define({ api: [
   },
   {
     "type": "get",
-    "url": "/api/1/charts/trades",
+    "url": "/api/1/charts/trades/{currency1}/{currency2}",
     "title": "Trades",
     "name": "Trades",
     "group": "Public_Charts",
