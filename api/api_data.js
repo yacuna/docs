@@ -227,7 +227,7 @@ define({ api: [
     "group": "Market",
     "version": "1.0.0",
     "description": "<p>Returns the MarketDepth for the market wit the given currencies.Supports ETag HTTP cache headers (If-None-Match).Each row in the bids and asks contains the following values:</p><ul><li>price in currency1</li><li>accumulated amount in currency1</li><li>accumulated amount in currency2</li></ul>",
-    "permission": "authenticated user",
+    "permission": "public",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -274,7 +274,7 @@ define({ api: [
     "group": "Market",
     "version": "1.0.0",
     "description": "<p>Counts available markets with optional currency filters</p>",
-    "permission": "authenticated user",
+    "permission": "public",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -321,7 +321,7 @@ define({ api: [
     "group": "Market",
     "version": "1.0.0",
     "description": "<p>Lists available markets with optional currency filters</p>",
-    "permission": "authenticated user",
+    "permission": "public",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -384,7 +384,7 @@ define({ api: [
     "group": "Market",
     "version": "1.0.0",
     "description": "<p>Returns the OrderBook for the market wit the given currencies.Supports ETag HTTP cache headers (If-None-Match).Each row in the bids and asks contains the following values:</p><ul><li>price in currency1</li><li>amount in currency1</li><li>amount in currency2</li></ul>",
-    "permission": "authenticated user",
+    "permission": "public",
     "parameter": {
       "fields": {
         "Parameter": [
