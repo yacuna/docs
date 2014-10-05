@@ -37,14 +37,14 @@ define({ api: [
             "type": "String",
             "field": "tradeDealType",
             "optional": true,
-            "description": "<p>By order type</p>"
+            "description": "<p>By order type, possible values:</br><code>Buy</code> - Buyer role in market context</br><code>Sell</code> - Seller role in market context</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeDealStatus",
             "optional": true,
-            "description": "<p>By order status</p>"
+            "description": "<p>By order status, possible values:</br><code>Created</code> - Created, but not yet processed by the wallet</br><code>Completed</code> - Deal has been completely processed</p>"
           },
           {
             "group": "Parameter",
@@ -574,21 +574,21 @@ define({ api: [
             "type": "String",
             "field": "tradeOrderType",
             "optional": true,
-            "description": "<p>By order type</p>"
+            "description": "<p>By order type, possible values:</br> <code>BuyMarket</code> - Buy at best market price</br><code>BuyLimit</code> - Buy at defined price or better</br><code>SellMarket</code> - Sell at best market price</br><code>SellLimit</code> - Sell at defined price or better</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderStatus",
             "optional": true,
-            "description": "<p>By order status</p>"
+            "description": "<p>By order status, possible values:</br><code>Created</code> - Created, but not yet active</br> <code>Confirmed</code> - Confirmed, to or in order-book</br> <code>Completed</code> - Order has been completely executed in at least 1 TradeDeal</br><code>Cancelled</code> - Order has been cancelled</br><code>Expired</code> - Order has been expired - typically after 1 day without being confirmed</br><code>Rejected</code> - Order has been rejected by the market</br></p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderMarketStatus",
             "optional": true,
-            "description": "<p>by order market status</p>"
+            "description": "<p>By order market status, possible values:</br><code>PendingSendToMarket</code> - Order is to be sent to the market</br><code>SentToMarket</code> - Order has been sent to the market</br><code>InOrderBook</code> - Order has been received by the market, and placed into the order-book</br><code>Completed</code> - Order has been completely executed, and removed from the order-book</br><code>PendingCancellationRequest</code> - Cancellation request is to be sent to the market</br><code>CancellationRequested</code> - Cancellation request has been sent to the market</br><code>Cancelled</code> - Order has been cancelled in the market, and removed from the order-book - though may still have been partially executed</br><code>Rejected</code> - Order has been rejected by the market</p>"
           },
           {
             "group": "Parameter",
