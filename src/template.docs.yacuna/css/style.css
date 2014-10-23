@@ -6,7 +6,7 @@ body {
 	max-width: 1280px;
 }
 
-body, p, a, div, th, td { 
+body, p, a, div, th, td {
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
@@ -214,6 +214,7 @@ pre.language-api .pun {
 }
 
 pre code {
+  overflow-x: auto;
   display: block;
   font-size: 14px;
   font-family: "Source Code Pro";
