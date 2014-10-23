@@ -204,7 +204,7 @@
             "field": "sorting",
             "defaultValue": "-Id",
             "optional": true,
-            "description": "<p>Sorting criteria, You could use the sorting API parameter, e.g. with the sorting you&#39;d like, e.g. <code>+CreationDateTime|+Id</code> to sort ascending by creationDateTime, and ascending by id for equal creationDateTime. Currently if you specify no sorting, the sorting is <code>-Id</code> which is descending by id, which means the newest deals are always the first in the list, provided the IDs are nicely generated.</p>"
+            "description": "<p>Sorting criteria. You could use the sorting API parameter, e.g. with the sorting you&#39;d like, e.g. <code>+CreationDateTime|+Id</code> to sort ascending by creationDateTime, and ascending by id for equal creationDateTime. Currently if you specify no sorting, the sorting is <code>-Id</code> which is descending by id, which means the newest deals are always the first in the list, provided the IDs are nicely generated.</p>"
           }
         ]
       }
