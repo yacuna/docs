@@ -107,7 +107,7 @@ define({ api: [
       "examples": [
         {
           "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n\t\"requestId\": \"JTsUBAAAAUavl12RLSugK96cEZM\",\n\t\"status\": \"Success\",\n\t\"tradeDeal\":\n\t{\n\t\t\"id\": \"AAEABGOj1rR4C7xxreNhYNjXItSH_Yp93aYNuhH2GuaNiE4UjkoRolFm\",\n\t\t\"creationDateTime\": \"2014-05-30T13:11:56Z\",\n\t\t\"walletAccountIdSold\": \"AAEAAAP2wHer522rsdPEsVFoHFKlFOGzAnpzUpovZf-Nt-X8deaIWN73\",\n\t\t\"customType\": null,\n\t\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\t\"walletAccountId\": \"AAEAAAP2wHer5G2K21wABSU-sITEYlyw95pStLQLoT9TxrCHcJ9pPNo_\",\n\t\t\"walletAccountItemId\": \"AAEAAAfCjEaHZli8L8akzpjTofA3udRJj_HdnCDYdBrV9H2S8tauyh6k\",\n\t\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\t\"orderId\": \"AAEAAks1SVZ5LFDgIZr78JiwvgeLKY5bjbE-3K13LddaT1rE0Dwev4pI\",\n\t\t\"otherTradeDealId\": \"AAEABGOj1rR4DJ2m2xrBDZqcIP94U6L_9rlC0amG9W2sdCvVy_N-ydr4\",\n\t\t\"tradeDealType\": \"Buy\",\n\t\t\"tradeDealSubtype\": \"MarketTaker\",\n\t\t\"tradeDealStatus\": \"Completed\",\n\t\t\"amount\":\n\t\t{\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 0.19622549\n\t\t},\n\t\t\"amountSold\":\n\t\t{\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 20.53303527\n\t\t},\n\t\t\"price\":\n\t\t{\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 104.64\n\t\t},\n\t\t\"feeAmount\":\n\t\t{\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 0.00019623\n\t\t},\n\t\t\"marketDealOwner\":\n\t\t{\n\t\t\t\"type\": \"MarketV1Deal\",\n\t\t\t\"id\": \"AAEAH3wOLq02MeYmW7OqZBQ4Vi-g1a16ZjWyJzJo4I2h2BIiy9E8oxNj\"\n\t\t}\n\t}\n}\n"
+          "content": "HTTP/1.1 200 OK\n{\n\t\"requestId\": \"JTsUBAAAAUavl12RLSugK96cEZM\",\n\t\"status\": \"Success\",\n\t\"tradeDeal\":\n\t{\n\t\t\"id\": \"AAEABGOj1rR4C7xxreNhYNjXItSH_Yp93aYNuhH2GuaNiE4UjkoRolFm\",\n\t\t\"creationDateTime\": \"2014-05-30T13:11:56Z\",\n\t\t\"walletId\": \"AAEAAAMk7LOCDuIYKZpn_pYm6BFexMEA2Lglnfikwed-G4gzG0tBHlQ2\",\n\t\t\"walletAccountId\": \"AAEAAAP2wHer5G2K21wABSU-sITEYlyw95pStLQLoT9TxrCHcJ9pPNo_\",\n\t\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\t\"orderId\": \"AAEAAks1SVZ5LFDgIZr78JiwvgeLKY5bjbE-3K13LddaT1rE0Dwev4pI\",\n\t\t\"sequenceNumber\": 1,\n\t\t\"tradeDealType\": \"Buy\",\n\t\t\"tradeDealSubtype\": \"MarketTaker\",\n\t\t\"tradeDealStatus\": \"Completed\",\n\t\t\"amount\":\n\t\t{\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 0.19622549\n\t\t},\n\t\t\"amountSold\":\n\t\t{\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 20.53303527\n\t\t},\n\t\t\"price\":\n\t\t{\n\t\t\t\"currency\": \"EUR\",\n\t\t\t\"amount\": 104.64\n\t\t},\n\t\t\"feeAmount\":\n\t\t{\n\t\t\t\"currency\": \"XBT\",\n\t\t\t\"amount\": 0.00019623\n\t\t}\n\t}\n}\n"
         }
       ]
     },
@@ -188,7 +188,7 @@ define({ api: [
             "field": "startWith",
             "defaultValue": "0",
             "optional": true,
-            "description": "<p>the number of items to skip in the result-set (paging)</p>"
+            "description": "<p>The number of items to skip in the result-set (paging)</p>"
           },
           {
             "group": "Parameter",
@@ -196,7 +196,15 @@ define({ api: [
             "field": "count",
             "defaultValue": "20",
             "optional": true,
-            "description": "<p>the number of items to return in the result-set (paging)</p>"
+            "description": "<p>The number of items to return in the result-set (paging)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "field": "sorting",
+            "defaultValue": "-Id",
+            "optional": true,
+            "description": "<p>Sorting criteria, You could use the sorting API parameter, e.g. with the sorting you&#39;d like, e.g. <code>+CreationDateTime|+Id</code> to sort ascending by creationDateTime, and ascending by id for equal creationDateTime. Currently if you specify no sorting, the sorting is <code>-Id</code> which is descending by id, which means the newest deals are always the first in the list, provided the IDs are nicely generated.</p>"
           }
         ]
       }
@@ -205,7 +213,7 @@ define({ api: [
       "examples": [
         {
           "title": "Success-Response Example:",
-          "content": "HTTP/1.1 200 OK\n{\n\t\"requestId\": \"sAlIlQAAAUazv4xQLSugK96cEKY\",\n\t\"status\": \"Success\",\n\t\"pagingInfo\":\n\t{\n\t\t\"requestedStartWith\": 0,\n\t\t\"requestedCount\": 20,\n\t\t\"actualCount\": 1,\n\t\t\"totalCount\": 1,\n\t\t\"totalPageCount\": 1,\n\t\t\"showPrevious\": false,\n\t\t\"currentPageNumber\": 0,\n\t\t\"showNext\": false\n\t},\n\t\"tradeDeals\":\n\t[\n\t\t{\n\t\t\t\"id\": \"AAEABGOj1rbiAVrGagoqt9fHYiEQ8FnkD53Ml2MPKtGYStcoRJi5APgI\",\n\t\t\t\"creationDateTime\": \"2014-05-23T11:23:23Z\",\n\t\t\t\"amount\":\n\t\t\t{\n\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\"amount\": 0.07123822\n\t\t\t},\n\t\t\t\"walletId\": \"AAEAAAMk7LOB56yLbnxh--VUTzxMBTdEwQQrWoUqozaNWhh71fzVUCzQ\",\n\t\t\t\"walletAccountId\": \"AAEAAAP2wHesNlgJwictLGppA9NSFvYZ4BzMhMXkwxmCFsz0WjEfTuoV\",\n\t\t\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\t\t\"orderId\": \"AAEAAks1SVctbFaVKy2Y8OQXaq4fYBA0WXJxp87d1_SQAKG7dfw4xWG6\",\n\t\t\t\"tradeDealType\": \"Buy\",\n\t\t\t\"tradeDealSubtype\": \"MarketTaker\",\n\t\t\t\"tradeDealStatus\": \"Completed\",\n\t\t\t\"amountSold\":\n\t\t\t{\n\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\"amount\": 7.27662798\n\t\t\t},\n\t\t\t\"price\":\n\t\t\t{\n\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\"amount\": 102.145\n\t\t\t},\n\t\t\t\"feeAmount\":\n\t\t\t{\n\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\"amount\": 0.00007124\n\t\t\t}\n\t\t}\n\t]\n}\n"
+          "content": "HTTP/1.1 200 OK\n{\n\t\"requestId\": \"sAlIlQAAAUazv4xQLSugK96cEKY\",\n\t\"status\": \"Success\",\n\t\"pagingInfo\":\n\t{\n\t\t\"requestedStartWith\": 0,\n\t\t\"requestedCount\": 20,\n\t\t\"actualCount\": 1,\n\t\t\"totalCount\": 1,\n\t\t\"totalPageCount\": 1,\n\t\t\"showPrevious\": false,\n\t\t\"currentPageNumber\": 0,\n\t\t\"showNext\": false\n\t},\n\t\"tradeDeals\":\n\t[\n\t\t{\n\t\t\t\"id\": \"AAEABGOj1rbiAVrGagoqt9fHYiEQ8FnkD53Ml2MPKtGYStcoRJi5APgI\",\n\t\t\t\"creationDateTime\": \"2014-05-23T11:23:23Z\",\n\t\t\t\"amount\":\n\t\t\t{\n\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\"amount\": 0.07123822\n\t\t\t},\n\t\t\t\"walletId\": \"AAEAAAMk7LOB56yLbnxh--VUTzxMBTdEwQQrWoUqozaNWhh71fzVUCzQ\",\n\t\t\t\"walletAccountId\": \"AAEAAAP2wHesNlgJwictLGppA9NSFvYZ4BzMhMXkwxmCFsz0WjEfTuoV\",\n\t\t\t\"marketId\": \"AAEAAARlG2T9PYuFwWPyYKZ7XSDxREo8LprKx3MMF3LHhlCPB6RMk9aW\",\n\t\t\t\"orderId\": \"AAEAAks1SVctbFaVKy2Y8OQXaq4fYBA0WXJxp87d1_SQAKG7dfw4xWG6\",\n\t\t\t\"sequenceNumber\": 1,\n\t\t\t\"tradeDealType\": \"Buy\",\n\t\t\t\"tradeDealSubtype\": \"MarketTaker\",\n\t\t\t\"tradeDealStatus\": \"Completed\",\n\t\t\t\"amountSold\":\n\t\t\t{\n\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\"amount\": 7.27662798\n\t\t\t},\n\t\t\t\"price\":\n\t\t\t{\n\t\t\t\t\"currency\": \"EUR\",\n\t\t\t\t\"amount\": 102.145\n\t\t\t},\n\t\t\t\"feeAmount\":\n\t\t\t{\n\t\t\t\t\"currency\": \"XBT\",\n\t\t\t\t\"amount\": 0.00007124\n\t\t\t}\n\t\t}\n\t]\n}\n"
         }
       ]
     },
@@ -574,14 +582,14 @@ define({ api: [
             "type": "String",
             "field": "tradeOrderType",
             "optional": true,
-            "description": "<p>By order type, possible values:</br> <code>BuyMarket</code> - Buy at best market price</br><code>BuyLimit</code> - Buy at defined price or better</br><code>SellMarket</code> - Sell at best market price</br><code>SellLimit</code> - Sell at defined price or better</p>"
+            "description": "<p>By order type, possible values:</br><code>BuyMarket</code> - Buy at best market price</br><code>BuyLimit</code> - Buy at defined price or better</br><code>SellMarket</code> - Sell at best market price</br><code>SellLimit</code> - Sell at defined price or better</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderStatus",
             "optional": true,
-            "description": "<p>By order status, possible values:</br><code>Created</code> - Created, but not yet active</br> <code>Confirmed</code> - Confirmed, to or in order-book</br> <code>Completed</code> - Order has been completely executed in at least 1 TradeDeal</br><code>Cancelled</code> - Order has been cancelled</br><code>Expired</code> - Order has been expired - typically after 1 day without being confirmed</br><code>Rejected</code> - Order has been rejected by the market</br></p>"
+            "description": "<p>By order status, possible values:</br><code>Created</code> - Created, but not yet active</br><code>Confirmed</code> - Confirmed, to or in order-book</br><code>Completed</code> - Order has been completely executed in at least 1 TradeDeal</br><code>Cancelled</code> - Order has been cancelled</br><code>Expired</code> - Order has been expired - typically after 1 day without being confirmed</br><code>Rejected</code> - Order has been rejected by the market</br></p>"
           },
           {
             "group": "Parameter",
@@ -813,14 +821,14 @@ define({ api: [
             "type": "String",
             "field": "tradeOrderType",
             "optional": true,
-            "description": "<p>By order type, possible values:</br> <code>BuyMarket</code> - Buy at best market price</br><code>BuyLimit</code> - Buy at defined price or better</br><code>SellMarket</code> - Sell at best market price</br><code>SellLimit</code> - Sell at defined price or better</p>"
+            "description": "<p>By order type, possible values:</br><code>BuyMarket</code> - Buy at best market price</br><code>BuyLimit</code> - Buy at defined price or better</br><code>SellMarket</code> - Sell at best market price</br><code>SellLimit</code> - Sell at defined price or better</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "tradeOrderStatus",
             "optional": true,
-            "description": "<p>By order status, possible values:</br><code>Created</code> - Created, but not yet active</br> <code>Confirmed</code> - Confirmed, to or in order-book</br> <code>Completed</code> - Order has been completely executed in at least 1 TradeDeal</br><code>Cancelled</code> - Order has been cancelled</br><code>Expired</code> - Order has been expired - typically after 1 day without being confirmed</br><code>Rejected</code> - Order has been rejected by the market</br></p>"
+            "description": "<p>By order status, possible values:</br><code>Created</code> - Created, but not yet active</br><code>Confirmed</code> - Confirmed, to or in order-book</br><code>Completed</code> - Order has been completely executed in at least 1 TradeDeal</br><code>Cancelled</code> - Order has been cancelled</br><code>Expired</code> - Order has been expired - typically after 1 day without being confirmed</br><code>Rejected</code> - Order has been rejected by the market</br></p>"
           },
           {
             "group": "Parameter",
