@@ -1,13 +1,16 @@
 #General
 
 ## About Yacuna
-Yacuna is a certified finance institute and hosts an international trading platform for digital currencies. 
+Yacuna.com is an international trading platform for digital currencies. 
 Registered users can easily conduct their financial transactions in Bitcoins (XBT), Litecoins (LTC) and Dogecoins (DOGE).
 All crypto currencies can be seamlessly exchanged to conventional currencies (e.g. EUR and GBP). 
 All transactions with digital currencies on the Yacuna trading platform are subject to the same market mechanisms also known from trading and stock exchanges.
 Yacuna Trading API allows you to become the high-frequency power trader on the Yacuna platform and to take advantage of arbitrage. 
 You can easily create, confirm and cancel market orders, monitor your deals and wallet balances in different currencies. 
 You can of course access the whole Yacuna order book and get information about the current market depth and spread.
+</p>
+Please note: Yacuna uses XBT cuttency code for Bitcoin instead of BTC.
+XBT currency code complies with [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217 "ISO 4217") standard for currencies. Since Bitcoin is not associated with any specific country, the standard dictates that it should start with an X as does Gold (XAU) and Silver (XAG).
 
 ## Getting Started
 To be able to use the Yacuna Trading API you need a valid Yacuna account which you can easily create at [Yacuna exchange](https://yacuna.com "Yacuna Exchange for DOGE XBT LTC").
