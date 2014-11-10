@@ -24,6 +24,9 @@ Do not hesitate to contact us in case of any questions or to share your experien
 [Contact Yacuna](https://yacuna.com/blog/contact/ "Yacuna Contact Form") </br>
 <info@yacuna.com> </br>
 
+## Sandbox
+Yacuna provides a full functional sandbox accessible for everyone for free. Sandbox provides the same functionality as the production system but without connectivity to the payment.
+
 ## Authentication 
 To be able to use the Yacuna Trading API you need a valid Yacuna account.<br>
 In your settings area you should get "API Token Id" and "API Token Secret".<br>
