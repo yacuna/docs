@@ -9,7 +9,7 @@ Yacuna Trading API allows you to become the high-frequency power trader on the Y
 You can easily create, confirm and cancel market orders, monitor your deals and wallet balances in different currencies. 
 You can of course access the whole Yacuna order book and get information about the current market depth and spread.
 </p>
-Please note: Yacuna uses XBT cuttency code for Bitcoin instead of BTC.
+Please note: Yacuna uses XBT currency code for Bitcoin instead of BTC.
 XBT currency code complies with [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217 "ISO 4217") standard for currencies. Since Bitcoin is not associated with any specific country, the standard dictates that it should start with an X as does Gold (XAU) and Silver (XAG).
 
 ## Getting Started
