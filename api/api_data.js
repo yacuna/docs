@@ -1071,7 +1071,7 @@ define({ api: [
             "type": "Number",
             "field": "since",
             "optional": false,
-            "description": "<p>Unix-timestamp in seconds</p>"
+            "description": "<p>the value of &#39;tid&#39; last received, to return the trades with a higher &#39;tid&#39;</p>"
           }
         ]
       }
