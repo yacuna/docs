@@ -1042,7 +1042,7 @@ define({ api: [
   },
   {
     "type": "get",
-    "url": "/api/1/charts/trades/{currency1}/{currency2}",
+    "url": "/api/1/charts/trades/{currency1}/{currency2}/?since={tid}",
     "title": "Trades",
     "name": "Trades",
     "group": "Public_Charts",
