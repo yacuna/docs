@@ -234,7 +234,7 @@ define({ api: [
     "name": "MarketDepth_get",
     "group": "Market",
     "version": "1.0.0",
-    "description": "<p>Returns the MarketDepth for the market wit the given currencies.Supports ETag HTTP cache headers (If-None-Match).Each row in the bids and asks contains the following values:</p><ul><li>price in currency1</li><li>accumulated amount in currency1</li><li>accumulated amount in currency2</li></ul>",
+    "description": "<p>Returns the MarketDepth for the market with the given currencies.Supports ETag HTTP cache headers (If-None-Match).Each row in the bids and asks contains the following values:</p><ul><li>price in currency1</li><li>accumulated amount in currency1</li><li>accumulated amount in currency2Please note that the MarketDepth shows how many coins you can get for which aggregated price.</li></ul>",
     "permission": "public",
     "parameter": {
       "fields": {
