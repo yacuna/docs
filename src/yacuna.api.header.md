@@ -1,12 +1,12 @@
 #General
 
 ## About Yacuna
-Yacuna.com is an international trading platform for digital currencies. 
+Yacuna.com is an international trading platform for digital currencies.
 Registered users can easily conduct their financial transactions in Bitcoins (XBT), Litecoins (LTC) and Dogecoins (DOGE).
-All crypto currencies can be seamlessly exchanged to conventional currencies (e.g. EUR and GBP). 
+All crypto currencies can be seamlessly exchanged to conventional currencies (e.g. EUR and GBP).
 All transactions with digital currencies on the Yacuna trading platform are subject to the same market mechanisms also known from trading and stock exchanges.
-Yacuna Trading API allows you to become the high-frequency power trader on the Yacuna platform and to take advantage of arbitrage. 
-You can easily create, confirm and cancel market orders, monitor your deals and wallet balances in different currencies. 
+Yacuna Trading API allows you to become the high-frequency power trader on the Yacuna platform and to take advantage of arbitrage.
+You can easily create, confirm and cancel market orders, monitor your deals and wallet balances in different currencies.
 You can of course access the whole Yacuna order book and get information about the current market depth and spread.
 </p>
 Please note: Yacuna uses XBT currency code for Bitcoin instead of BTC.
@@ -14,7 +14,7 @@ XBT currency code complies with [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217
 
 ## Getting Started
 To be able to use the Yacuna Trading API you need a valid Yacuna account which you can easily create at [Yacuna exchange](https://yacuna.com "Yacuna Exchange for DOGE XBT LTC").
-We would recommend you to add all user data which is needed to complete your full KYC (Know Your Customer) verification, 
+We would recommend you to add all user data which is needed to complete your full KYC (Know Your Customer) verification,
 this will bring you higher limits on deposits, withdrawals and trading transactions.
 You can do this under Settings / Personal Data. See more information regarding verification levels and limits under [Yacuna FAQ](https://yacuna.com/blog/faq/ "Yacuna FAQ")
 To get started using Yacuna Trading API go to your settings area and find "API Token Id" and "API Token Secret" under the API-tab.
@@ -25,9 +25,9 @@ Do not hesitate to contact us in case of any questions or to share your experien
 <info@yacuna.com> </br>
 
 ## Sandbox
-Yacuna provides a fully functional [Sandbox](https://sandbox.yacuna.com "Safe testing environment at Yacuna Sandbox") accessible by everyone for free. Sandbox provides the same functionality as the live system. But instead of normal cryptocoins and real fiat money it uses coins generated in the testnet and virtual fiat money provided by Yacuna. You can use the Yacuna sandbox to safely test the functionality of our trading platform or to write your apps utilizing our API before using them in a live environment. After you registered [here](https://sandbox.yacuna.com/#/signup "Registration for the Yacuna Sandbox") Yacuna will provide you with a supply of virtual money. You can also use the [Yacuna Faucet](https://faucet.yacuna.com "Get your testcoins here") to request testcoins that can be used at the Sandbox. Naturally withdrawal of fiat currency is deactivated and we kindly ask you to send the testcoins back to Yacuna when you finished testing the Sandbox. 
+Yacuna provides a fully functional [Sandbox](https://sandbox.yacuna.com "Safe testing environment at Yacuna Sandbox") accessible by everyone for free. Sandbox provides the same functionality as the live system. But instead of normal cryptocoins and real fiat money it uses coins generated in the testnet and virtual fiat money provided by Yacuna. You can use the Yacuna sandbox to safely test the functionality of our trading platform or to write your apps utilizing our API before using them in a live environment. After you registered [here](https://sandbox.yacuna.com/#/signup "Registration for the Yacuna Sandbox") Yacuna will provide you with a supply of virtual money. You can also use the [Yacuna Faucet](https://faucet.yacuna.com "Get your testcoins here") to request testcoins that can be used at the Sandbox. Naturally withdrawal of fiat currency is deactivated and we kindly ask you to send the testcoins back to Yacuna when you finished testing the Sandbox.
 
-## Authentication 
+## Authentication
 To be able to use the Yacuna Trading API you need a valid Yacuna account.<br>
 In your settings area you should get "API Token Id" and "API Token Secret".<br>
 Using those data you can generate the "Api-Token" to be calculated and passed with each API call within HTTP headers.<br>
@@ -56,7 +56,7 @@ As salt for Api-token calculation unix timestamp in milliseconds should be used.
 		</tr>
 		<tr>
 			<td class="code">URI path of request</td>
-			<td>eg. /api/1/wallet/get&currency=EUR</td>
+			<td>eg. /api/1/wallet/get?currency=EUR</td>
 		</tr>
 		<tr>
 			<td class="code">Separator character</td>
@@ -65,10 +65,10 @@ As salt for Api-token calculation unix timestamp in milliseconds should be used.
 	</tbody>
 </table>
 
-Plain input for Api-Token calculation: 
+Plain input for Api-Token calculation:
 <pre class="prettyprint language-html prettyprinted" data-type="example"><code><span class="pln">1404203385000@0ab0ac9aa5fb881b30d56cb40368c8a2@GET@/api/1/wallet/get</span></code></pre>
 
-Api token creation algorithm: 
+Api token creation algorithm:
 <pre class="prettyprint language-html prettyprinted" data-type="algorithm"><code><span class="pln">salt+T+hex(sha512(plain input))</span></code></pre>
 
 Api token result
